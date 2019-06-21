@@ -1,0 +1,8 @@
+Q3) The result of 2b is null because the value of b is not co-prime within Z(N). We are
+given this result because N is not a prime number and, therefore, not all values within 
+Z(N) are invertible. This is different for 2a where N is a prime number as all elements
+in Z(N) (aside from 0) are invertible. The values of Z(N) in 2a create a finite field 
+where the values are both invertible and cyclic. This means that, given any a, we can 
+calculate b using the Extended Euclidean algorithm and, thus, any linear equations through
+the modulus, whereas for values Z(N) in 2a, we can only assume to solve some of the values
+a to obtain b. 

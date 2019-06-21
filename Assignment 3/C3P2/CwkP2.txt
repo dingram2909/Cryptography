@@ -1,0 +1,17 @@
+Question 1)
+You can check the authenticity of the download by ensuring you download from a reputable
+source. Upon installation of GnuPG, the program runs checksums on all of the included 
+packages to ensure that the installation is authentic and hasn't been tampered with. The 
+program also comes with a self-test function which checks the installation. It also 
+comes with the ability to check and reload tickets from the GnuPG server. It is 
+important to verify both the validity of the download/installation and the authenticity 
+of the recipient as an attack could occur from either side, either giving you a tampered 
+with encryption program, or providing an invalid recipient. You can check the recipient
+is authentic by verifying their certificate with the relevant authorities. This means that
+certificates have to be signed by an authorised entity or one of the top entities.
+
+Question 2)
+To encrypt files GnuPG layers the certificate's signature over the top of the document 
+which is being encrypted and then, after the user has selected a pass phrase to solidify 
+the encryption, the program runs the encryption process, ensuring that the file size is 
+accounted for and encrypted.

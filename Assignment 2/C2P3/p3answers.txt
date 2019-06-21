@@ -1,0 +1,17 @@
+Q3) When both Alice and Bob have the same key (post-key exchange), they can start to
+communicate through a secure channel using the key generated (called a session key).
+This is done by plugging the Session Key and another random number (called the Salt) into
+a Key Derivative Function to take the randomness of the Session Key and distribute it 
+across many keys. We hash the Session Key with the salt, this can then distribute randomness
+amongst other keys. These keys are used to transmit the Message Authentication Codes for
+both Alice and Bob (which allow for secure transmission and notification of whether the 
+message has been tampered with) and the Encryption Keys used by both as well.
+
+Q4) Eve can break the Diffie-Hellman exchange after intercepting Alice's message to Bob by
+pretending to be Bob and replying to Alice using her own secret. Eve can then pretend to 
+be Alice requesting a connection to Bob using her own Modulus or Base (probably both). 
+This will allow Eve to communicate to Alice securely using the key she obtains from Alice
+and it will also allow Eve to communicate with Bob securely using his response to generate
+a key. Alice and Bob will believe they are communicating to each other and send secure 
+information to each other and Eve, having the keys to decrypt the information from both, 
+can read and tamper with the messages at her leisure.

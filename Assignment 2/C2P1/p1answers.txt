@@ -1,0 +1,13 @@
+Q2) The principle of the Extended Euclidian Algorithm is to find the greatest common
+divisor (GCD) of a set of values (x, N) which can be used to calculate the multiplicative
+inverse of a number modulo N. The multiplicative inverse of two values is found when the
+result of the GCD calculation is 1, this indicates that the values input are multiplicative
+inverses of each other. This works because we are under the assumption the the result of 
+the GCD calculation multiplied by a value returns us x and y (e.g. x = d*s and y = d*t)
+and the calculation of (x*s) + (y*t) = d.
+
+
+Q3) Three uses of the Extended Euclidian Algorithm are:
+	1) Solving Linear Equations.
+	2) Calculating the multiplicative inverse of a number modulo N.
+	3) Calculating if two integers are coprime.
